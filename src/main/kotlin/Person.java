@@ -1,5 +1,4 @@
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 public class Person {
     private final String name;
 
@@ -7,6 +6,7 @@ public class Person {
         this.name = name;
     }
 
+    //빼지면 컴파일 단계에서 체크가 안됌.
     @NotNull
     public String getName() {
         return name;
