@@ -19,8 +19,13 @@ fun main() {
     val money6 = JavaMoney(3_000L)
 
     //주소가 같은지
-    println(money3 === money5)
+    println(message = money3 === money5)
     //값이 같은지
-    println(money3 == money5)
+    println(message = money3 == money5)
 
+    //논리 연산자. 0
+    //단할 연산자, 산술연산자, 산술대입연산자 Java 똑같다.
+    val coMoney1 = Money(1_000L);
+    val coMoney2 = Money(2_000L);
+    print(coMoney1 + coMoney2);
 }
