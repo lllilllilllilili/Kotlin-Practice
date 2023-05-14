@@ -1,7 +1,7 @@
 
-fun validateScoreIsNotNegative(score: Int) {
-    if (score < 0) {
-        throw java.lang.IllegalArgumentException("${score}는 0보다 작을 수 없습니다.");
+fun validateScore(score: Int) {
+    if (score !in 0..100) {
+        throw java.lang.IllegalArgumentException("score의 범위는 0부터 100입니다.");
     }
 }
 
